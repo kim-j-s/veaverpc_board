@@ -153,10 +153,8 @@
             return sval;
         }
 
-        $(window).on('load', function(){
-            const param = Number(getParam("tab")) + 1;
-            movePage(param);
-        });
+        var param = Number(getParam("tab")) + 1;
+        movePage(param);
         // param 추가 2021-05-23
     }
 
