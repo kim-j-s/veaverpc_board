@@ -153,8 +153,10 @@
             return sval;
         }
 
-        var param = Number(getParam("tab")) + 1;
-        movePage(param);
+        setTimeout(function(){
+            var param = Number(getParam("tab")) + 1;
+            movePage(param);
+        }, 500)
         // param 추가 2021-05-23
     }
 
